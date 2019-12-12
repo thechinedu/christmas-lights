@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Christmas Lights</title>
+  </head>
+  <body>
+    <section class="light-bulbs">
+      <div class="light-bulb theme-color-one">
+        <input
+          type="color"
+          class="color-setting hidden"
+          value="#025ba0"
+          data-theme-color="one"
+        />
+      </div>
+      <div class="light-bulb theme-color-two">
+        <input
+          type="color"
+          class="color-setting hidden"
+          value="#9bc72b"
+          data-theme-color="two"
+        />
+      </div>
+      <div class="light-bulb theme-color-three">
+        <input
+          type="color"
+          class="color-setting hidden"
+          value="#f0c517"
+          data-theme-color="three"
+        />
+      </div>
+      <div class="light-bulb theme-color-four">
+        <input
+          type="color"
+          class="color-setting hidden"
+          value="#bf1724"
+          data-theme-color="four"
+        />
+      </div>
+      <div class="light-bulb theme-color-five">
+        <input
+          type="color"
+          class="color-setting hidden"
+          value="#5cc9f4"
+          data-theme-color="five"
+        />
+      </div>
+      <div class="light-bulb theme-color-one">
+        <input
+          type="color"
+          class="color-setting hidden"
+          value="#025ba0"
+          data-theme-color="one"
+        />
+      </div>
+    </section>
+
+    <section class="light-bulb-settings">
+      <h3>Settings</h3>
+      <div class="group">
+        <label>State:</label>
+        <div class="checkbox-container">
+          <input type="checkbox" class="light-switch" data-elem="switch" />
+        </div>
+        <span class="light-switch-state">off</span>
+      </div>
+
+      <div class="group">
+        <label>Interval:</label>
+        <input
+          class="interval-control"
+          type="number"
+          value="1.1"
+          step="0.1"
+          min="0.1"
+          max="2"
+          data-elem="interval"
+        />
+      </div>
+
+      <button class="color-wheel">Toggle color wheel</button>
+    </section>
+
+    <script src="./christmas-light.js"></script>
+  </body>
+</html>
