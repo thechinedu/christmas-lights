@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Alatsi", sans-serif;
+  font-family: 'Alatsi', sans-serif;
 }
 
 @keyframes light-up-theme-color-one {
@@ -160,7 +160,7 @@ body {
 }
 
 .light-bulb::before {
-  content: "";
+  content: '';
   position: absolute;
   border: 2px solid #222;
   width: 10px;
@@ -173,7 +173,7 @@ body {
 }
 
 .light-bulb::after {
-  content: "";
+  content: '';
   top: -20px;
   left: 60%;
   position: absolute;
@@ -248,7 +248,7 @@ body {
 }
 
 .checkbox-container::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 25px;
   height: 25px;
@@ -281,4 +281,9 @@ body {
   margin-top: 10px;
   padding: 6px 12px;
   outline: 0;
+  transition-duration: 0.4s;
+}
+
+.color-wheel:active {
+  transform: scale(0.9);
 }
